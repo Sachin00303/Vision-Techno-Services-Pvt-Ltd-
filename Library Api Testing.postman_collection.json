@@ -1,0 +1,501 @@
+{
+	"info": {
+		"_postman_id": "1890756a-6ed2-4881-8282-ae521ea3c748",
+		"name": "Library Api Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35575486"
+	},
+	"item": [
+		{
+			"name": "User1 Testing",
+			"item": [
+				{
+					"name": "Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"nilesh@gmail.com\",\r\n    \"name\":\"Nilesh\",\r\n    \"password\":\"1234567\",\r\n    \"password2\":\"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/registre/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"registre",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"nilesh@gmail.com\",\r\n    \"password\":\"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book-Borrow-Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzNjY2Nzk5LCJpYXQiOjE3MzM2NjYxOTksImp0aSI6ImM0NjgwNjVjOGNlYTRjZDRhOWEzMTc0OTdmMTE2ZWQyIiwidXNlcl9pZCI6Mn0.aVnfPn6A1rNLBjXpz6EH6g0U1ahoejnR463b8DmKdHE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"book\":1,\r\n    \"start_date\":\"2024-12-08\",\r\n    \"end_date\":\"2024-12-09\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/requestbook/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"requestbook",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User-Borrow-History",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzNjY2Nzk5LCJpYXQiOjE3MzM2NjYxOTksImp0aSI6ImM0NjgwNjVjOGNlYTRjZDRhOWEzMTc0OTdmMTE2ZWQyIiwidXNlcl9pZCI6Mn0.aVnfPn6A1rNLBjXpz6EH6g0U1ahoejnR463b8DmKdHE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/History",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"History"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User2 Testing",
+			"item": [
+				{
+					"name": "Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"kumar@gmail.com\",\r\n    \"name\":\"Kumar\",\r\n    \"password\":\"1234567\",\r\n    \"password2\":\"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/registre/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"registre",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"kumar@gmail.com\",\r\n    \"password\":\"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book-Borrow-Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzNjY3Mzk2LCJpYXQiOjE3MzM2NjY3OTYsImp0aSI6IjMzMjcyNGZlZTJhMDQ4ZWE5Y2ViOWZlMTc5MzI4N2I2IiwidXNlcl9pZCI6M30.iULWgL8ouP81Acn_UUN6Uwfg62teVqWZKNIZLKMNk5I",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"book\":2,\r\n    \"start_date\":\"2024-12-08\",\r\n    \"end_date\":\"2024-12-09\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/requestbook/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"requestbook",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Same-Book-Borrow-Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzNjY3Mzk2LCJpYXQiOjE3MzM2NjY3OTYsImp0aSI6IjMzMjcyNGZlZTJhMDQ4ZWE5Y2ViOWZlMTc5MzI4N2I2IiwidXNlcl9pZCI6M30.iULWgL8ouP81Acn_UUN6Uwfg62teVqWZKNIZLKMNk5I",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"book\":1,\r\n    \"start_date\":\"2024-12-08\",\r\n    \"end_date\":\"2024-12-09\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/requestbook/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"requestbook",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrow-History",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzNjY3Mzk2LCJpYXQiOjE3MzM2NjY3OTYsImp0aSI6IjMzMjcyNGZlZTJhMDQ4ZWE5Y2ViOWZlMTc5MzI4N2I2IiwidXNlcl9pZCI6M30.iULWgL8ouP81Acn_UUN6Uwfg62teVqWZKNIZLKMNk5I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/History",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"History"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Librarian Testing",
+			"item": [
+				{
+					"name": "Librarian Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"sachin@gmail.com\",\r\n    \"name\":\"sachin\",\r\n    \"password\":\"1234567\",\r\n    \"password2\":\"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/registre/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"registre",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Librarian-Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"sachin@gmail.com\",\r\n    \"password\":\"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request-Approval",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzNjY4MDY2LCJpYXQiOjE3MzM2Njc0NjYsImp0aSI6IjA5M2I5YWVjNzRmYzQ4YzNiZGZlNjJlNTk0M2ZlOWI3IiwidXNlcl9pZCI6NH0._lz-Cb7zx2OgSzIsO0QbNrhtNJVYOdx52_w_GSTRMtI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"Approved\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/approval/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"approval",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrow-History-usaers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzNjY4MDY2LCJpYXQiOjE3MzM2Njc0NjYsImp0aSI6IjA5M2I5YWVjNzRmYzQ4YzNiZGZlNjJlNTk0M2ZlOWI3IiwidXNlcl9pZCI6NH0._lz-Cb7zx2OgSzIsO0QbNrhtNJVYOdx52_w_GSTRMtI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/History",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"History"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
